@@ -17,16 +17,30 @@ fun main() {
     } }
 
 fun addCalculator() {
+    println("더하기 연산을 실행합니다.")
+    println("하나의 숫자를 입력해주세요.")
+
+    val number1 = readln().toDouble()
+
+    println("더할 숫자를 입력해주세요.")
+    val number2 = readln().toDouble()
+
+    val answer = number1 + number2
+    println("값: $answer")
 }
 
 fun subtractCalculator() {
-}
-
-fun divideCalculator()
+    println("빼기 연산을 실행합니다.")
 }
 
 fun multiplyCalculator() {
+    println("곱하기 연산을 실행합니다.")
+}
+
+fun divideCalculator() {
+    println("몫 구하기 연산을 실행합니다.")
 }
 
 fun RemainderCalculator() {
+    println("나머지 구하기 연산을 실행합니다.")
 }
