@@ -6,7 +6,7 @@ fun main() {
 
     val selectedMenu = readLine()
 
-    when(selectedMenu) {
+    when (selectedMenu) {
         "1" -> addCalculator()
         "2" -> subtractCalculator()
         "3" -> multiplyCalculator()
@@ -14,7 +14,8 @@ fun main() {
         "5" -> RemainderCalculator()
         "" -> println("값을 입력하지 않았습니다. 다시 실행해주세요.")
         else -> println("잘못된 값을 입력했습니다. 다시 실행해주세요.")
-    } }
+    }
+}
 
 fun addCalculator() {
     println("더하기 연산을 실행합니다.")
@@ -31,6 +32,15 @@ fun addCalculator() {
 
 fun subtractCalculator() {
     println("빼기 연산을 실행합니다.")
+    println("하나의 숫자를 입력해주세요.")
+
+    val number1 = readln().toDouble()
+
+    println("뺄 숫자를 입력해주세요.")
+    val number2 = readln().toDouble()
+
+    val answer = number1 - number2
+    println("값: $answer")
 }
 
 fun multiplyCalculator() {
