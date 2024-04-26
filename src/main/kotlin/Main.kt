@@ -4,13 +4,13 @@ fun main() {
     println("메뉴를 확인 후, 번호를 입력해주세요.")
     println("1.더하기 / 2.빼기 / 3.곱하기 / 4.몫 구하기/ 5.나머지 구하기")
 
-    val selectedMenu = readLine()
+    val selectedMenu = readlnOrNull()
 
-    val addOperation = AddCalculator()
-    val subtractOperation = SubtractCalculator()
-    val multiplyOperation = MultiplyCalculator()
-    val divideOperation = DivideCalculator()
-    val remainderOperation = RemainderCalculator()
+    val addOperation = AddOperation()
+    val subtractOperation = SubtractOperation()
+    val multiplyOperation = MultiplyOperation()
+    val divideOperation = DivideOperation()
+    val remainderOperation = RemainderOperation()
 
 
     when (selectedMenu) {

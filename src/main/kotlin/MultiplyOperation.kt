@@ -1,16 +1,17 @@
 package org.example
+import Calculator
 
-class MultiplyCalculator {
+class MultiplyOperation {
     fun multiplyCalculator() {
         println("곱하기 연산을 실행합니다.")
         println("하나의 숫자를 입력해주세요.")
 
-        val number1 = readln().toDouble()
+        val number1 = readln().toLong()
 
         println("곱하기 연산할 숫자를 입력해주세요.")
-        val number2 = readln().toDouble()
+        val number2 = readln().toLong()
 
-        val answer = number1 * number2
-        println("값: $answer")
+        val calculator = Calculator()
+        println("값: ${calculator.multiplyOperate(number1, number2)}")
     }
 }

@@ -1,6 +1,7 @@
 package org.example
+import Calculator
 
-class RemainderCalculator {
+class RemainderOperation {
     fun remainderCalculator() {
         println("나머지 구하기 연산을 실행합니다.")
         println("하나의 숫자를 입력해주세요.")
@@ -10,7 +11,7 @@ class RemainderCalculator {
         println("나머지 구하기 연산할 숫자를 입력해주세요.")
         val number2 = readln().toLong()
 
-        val answer = number1 % number2
-        println("값: $answer")
+        val calculator = Calculator()
+        println("값: ${calculator.remainderOperate(number1, number2)}")
     }
 }
