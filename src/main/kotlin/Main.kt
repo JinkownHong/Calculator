@@ -12,7 +12,6 @@ fun main() {
     val divideOperation = DivideOperation()
     val remainderOperation = RemainderOperation()
 
-
     when (selectedMenu) {
         "1" -> addOperation.addCalculator()
         "2" -> subtractOperation.subtractCalculator()
